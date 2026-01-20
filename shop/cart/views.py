@@ -37,6 +37,6 @@ def cart_detail(request):
             'override': True,              # при сабмите заменяем количество
         })
 
-    return render(request, 'cart/detail.html', {
+    return render(request, 'cart/cart_detail.html', {
         'cart': cart  # передаём корзину в шаблон
     })
